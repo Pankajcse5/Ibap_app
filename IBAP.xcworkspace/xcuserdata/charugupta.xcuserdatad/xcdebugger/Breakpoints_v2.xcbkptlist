@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/AppDelegate.swift"
+            timestampString = "548257085.60333"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/MoreLoginDetailsViewController.swift"
+            timestampString = "548776490.825513"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "showPicker(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/MoreLoginDetailsViewController.swift"
+            timestampString = "548776490.859383"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "showPicker(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/MoreLoginDetailsViewController.swift"
+            timestampString = "548776490.859494"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "proceedbtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/MoreLoginDetailsViewController.swift"
+            timestampString = "548776490.859575"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "proceedbtn(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.158257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__deallocating_deinit"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850825.7233289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850825.727342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850825.731123"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850825.7359509"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850825.739971"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.1587369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__deallocating_deinit"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.548746"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.567136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.5739059"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.588464"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.592764"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.1588269"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.ArticalName.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.610106"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.ArticalName.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.614677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "229">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.618757"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.623605"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.1589071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.ArticalName.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.63697"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.ArticalName.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.639979"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "229">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.642695"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.646799"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.158986"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.articals.getter : Swift.Array&lt;IBAP.ListOfArticalsModal&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.763478"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.articals.setter : Swift.Array&lt;IBAP.ListOfArticalsModal&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.767342"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.771189"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.774698"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "235">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.1590641"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.collRef.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CollectionReference&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.891788"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.collRef.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.CollectionReference&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.896372"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.900777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "514">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.904072"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "447">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.159144"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.titleBar.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.9201469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.titleBar.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.924958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.93215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "626">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850830.935794"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "563">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IBAP/ArticalListViewController.swift"
+            timestampString = "548878085.15922"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getData(list:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.titleBar.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850831.021862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.titleBar.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UINavigationItem&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850831.026446"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "90">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IBAP.ArticalListViewController"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850831.031026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "626">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IBAP.ArticalListViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IBAP.ArticalListViewController&gt;"
+                  moduleName = "IBAP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/charugupta/Desktop/IBAP/IBAP/ArticalListViewController.swift"
+                  timestampString = "548850831.0359811"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "563">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
