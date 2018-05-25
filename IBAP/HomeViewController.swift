@@ -139,7 +139,7 @@ class HomeViewController: UIViewController {
     @IBAction func ShowMenu(_ sender: Any) {
         print("Showmenu")
         if dropper.status == .hidden{
-        dropper.items = ["bookmarks","more.png","notes","more"]
+        dropper.items = ["bookmarks","more.png","notes"]
             dropper.theme = Dropper.Themes.white
             dropper.delegate = self
             dropper.cornerRadius = 3
