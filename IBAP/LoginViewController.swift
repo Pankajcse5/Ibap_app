@@ -132,6 +132,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signIn()
         let userdefaults=UserDefaults.standard
+        
+        while(!userdefaults.bool(forKey: "loginStatus")){
+        
+        }
         if userdefaults.bool(forKey: "loginStatus"){
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "morelogindetails") as! MoreLoginDetailsViewController
@@ -143,6 +147,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
             self.removeAllOverlays()
             self.showAlert(title: "info", msg: "Something went wrong!")
         }
+        print(userdefaults.bool(forKey: "loginStatus"))
         
         
     }

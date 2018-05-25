@@ -13,25 +13,61 @@ import SDWebImage
 @objc protocol SampleViewDelegate{
     func dismiss()
     func setContents(imageurl:String,content:String,name:String)
+    
 }
 
 class SampleView: UIView {
     
     weak var delegate: SampleViewDelegate?
+    var Data:[Any]?
     
-    @IBOutlet weak var imageUser: UIImageView!
+    let view = SampleView()
+    
+    
+    
+    @IBOutlet weak var userImage: UIImageView!
+    var Image:String = ""
     
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var webview: UIWebView!
+    @IBAction func test(_ sender: Any) {
+        userImage.image=UIImage(named:"background.png")
+        name.text="Pawan Tanwan"
+        
+    }
+    init() {
+        super.init(frame: CGRect.init())
+        NSObject.initialize()
+        print("start")
+        setData()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        print("start")
+        setData()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
+        print("start")
+        setData()
+    }
+    
+    
+    
+    
     func setValue(data:[Any]?)->Bool{
-        print(data as Any)
-        if let details = data{
-            imageUser.sd_setImage(with: URL(string: details[2] as! String), placeholderImage: UIImage(named: "ctc.png"))
-            name.text = details[5] as? String
-            webview.loadHTMLString(details[2] as! String, baseURL: nil)
-        }
+        Data=data
         return true
     }
+    func setData(){
+       self.name.text="unwrapped"
+    }
+    
+    
+    
+    
     
  
 

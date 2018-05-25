@@ -24,6 +24,7 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="FS2-SX-Iv7"/>
                                 <constraint firstAttribute="height" constant="80" id="JBa-9E-95A"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="c7a-do-eYV"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjj-uO-7J2">
@@ -36,6 +37,13 @@
                             <rect key="frame" x="0.0" y="78" width="375" height="524"/>
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </webView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOT-uz-kTi">
+                            <rect key="frame" x="64" y="8" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="test:" destination="iN0-l3-epB" eventType="touchUpInside" id="2rI-jN-u8X"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -43,12 +51,15 @@
                         <constraint firstAttribute="trailing" secondItem="4oT-ri-AoV" secondAttribute="trailing" id="ACl-g2-io9"/>
                         <constraint firstItem="8Wv-ON-cmu" firstAttribute="leading" secondItem="xZi-7Q-6ne" secondAttribute="leading" constant="142" id="Dm3-1j-kN3"/>
                         <constraint firstItem="Hjj-uO-7J2" firstAttribute="centerX" secondItem="xZi-7Q-6ne" secondAttribute="centerX" id="FMZ-ih-QYn"/>
+                        <constraint firstItem="8Wv-ON-cmu" firstAttribute="leading" secondItem="AOT-uz-kTi" secondAttribute="trailing" constant="32" id="SBM-2j-HTc"/>
+                        <constraint firstItem="AOT-uz-kTi" firstAttribute="top" secondItem="xZi-7Q-6ne" secondAttribute="top" constant="8" id="WJ7-AM-yvD"/>
                         <constraint firstAttribute="bottom" secondItem="4oT-ri-AoV" secondAttribute="bottom" id="YXo-W2-wxO"/>
                         <constraint firstItem="4oT-ri-AoV" firstAttribute="leading" secondItem="xZi-7Q-6ne" secondAttribute="leading" id="drV-a1-yJN"/>
                         <constraint firstAttribute="trailing" secondItem="8Wv-ON-cmu" secondAttribute="trailing" constant="143" id="eCb-yl-WlX"/>
                         <constraint firstItem="4oT-ri-AoV" firstAttribute="top" secondItem="Hjj-uO-7J2" secondAttribute="bottom" constant="8" id="evU-Rt-Ewn"/>
                         <constraint firstItem="8Wv-ON-cmu" firstAttribute="centerX" secondItem="xZi-7Q-6ne" secondAttribute="centerX" id="fox-41-wvj"/>
                         <constraint firstItem="8Wv-ON-cmu" firstAttribute="centerX" secondItem="xZi-7Q-6ne" secondAttribute="centerX" id="hfA-LF-K5a"/>
+                        <constraint firstItem="AOT-uz-kTi" firstAttribute="leading" secondItem="xZi-7Q-6ne" secondAttribute="leading" constant="64" id="kGc-wD-BRK"/>
                         <constraint firstItem="8Wv-ON-cmu" firstAttribute="top" secondItem="xZi-7Q-6ne" secondAttribute="top" constant="-39" id="pEj-Vt-DBb"/>
                         <constraint firstItem="Hjj-uO-7J2" firstAttribute="top" secondItem="8Wv-ON-cmu" secondAttribute="bottom" constant="8" id="zKB-c1-64e"/>
                     </constraints>
@@ -65,9 +76,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="imageUser" destination="8Wv-ON-cmu" id="H4a-ru-CeH"/>
-                <outlet property="name" destination="Hjj-uO-7J2" id="gAp-SC-lFW"/>
-                <outlet property="webview" destination="4oT-ri-AoV" id="QIu-aJ-HMb"/>
+                <outlet property="name" destination="Hjj-uO-7J2" id="Cpc-kl-ZhW"/>
+                <outlet property="userImage" destination="8Wv-ON-cmu" id="5Uy-as-RbY"/>
             </connections>
         </view>
     </objects>

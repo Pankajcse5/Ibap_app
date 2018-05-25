@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
 
     var window: UIWindow?
+    var status:Bool!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -76,6 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
+        
         if let error = error {
             
             //showAlert(title: "Error", msg: error.localizedDescription)
@@ -98,6 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 var docRef:CollectionReference!
                 let db=Firestore.firestore()
                 docRef=db.collection("Users")
+                print(docRef)
                 docRef.document((user?.email)!).getDocument(){(docSnapshot,error) in
                     guard let docSnapshot=docSnapshot,!docSnapshot.exists else{return}
                     docRef.document((user?.email)!).setData([
@@ -109,11 +112,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                         "Credits":0
                         
                     ]){(error) in
-                        if  error != nil{
-                            //self.showAlert(title: "Error", msg: error.localizedDescription)
+                        if  let Error = error{
+                           print(Error)
                         }else{
                             let userdefault=UserDefaults.standard
                             userdefault.set(true, forKey: "loginStatus")
+                            self.status = true
+                            print("login")
+                            
                             
                         }
                     }
@@ -123,13 +129,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             }
             
             
+            
         }
-        
         // ...
     }
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
+    }
+    func googleStatus()->Bool{
+        
+        return status
+        
     }
     
         

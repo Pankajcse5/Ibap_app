@@ -27,7 +27,7 @@ class ArticalDetailsViewController: UIViewController {
         
         // First view
         if let sampleView = UINib(nibName: "SampleView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? SampleView {
-            sampleView.delegate = self
+            
             let sampleViewItem = CustomizableActionSheetItem(type: .view, height: 600)
             sampleViewItem.view = sampleView
             items.append(sampleViewItem)
@@ -97,7 +97,7 @@ class ArticalDetailsViewController: UIViewController {
     */
 
 }
-extension ArticalDetailsViewController:SampleViewDelegate{
+/*extension ArticalDetailsViewController:SampleViewDelegate{
     func dismiss() {
         
     }
@@ -108,4 +108,4 @@ extension ArticalDetailsViewController:SampleViewDelegate{
     
     
     
-}
+}*/
