@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
         //let settings = db.settings
         //settings.areTimestampsInSnapshotsEnabled = true
         // db.settings = settings
+        self.navigationController?.navigationBar.backgroundColor=UIColor.red
         dropper.delegate=self
         table.dataSource=self
         table.delegate=self
