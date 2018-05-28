@@ -22,6 +22,8 @@ pod 'SDWebImage', '~> 4.0'
 pod 'MIBlurPopup'
 pod 'UIImageColors', '~> 2.0'
 pod 'CustomizableActionSheet'
+pod 'SwiftSoup', '~> 1.7'
+
 
 
 

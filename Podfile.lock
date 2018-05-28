@@ -108,6 +108,7 @@ PODS:
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
   - SwiftOverlays (4.0.1)
+  - SwiftSoup (1.7.1)
   - UIImageColors (2.0.0)
   - Zip (1.1.0)
 
@@ -126,6 +127,7 @@ DEPENDENCIES:
   - MIBlurPopup
   - SDWebImage (~> 4.0)
   - SwiftOverlays (~> 4.0.0)
+  - SwiftSoup (~> 1.7)
   - UIImageColors (~> 2.0)
   - Zip (~> 1.1)
 
@@ -161,6 +163,7 @@ SPEC REPOS:
     - Protobuf
     - SDWebImage
     - SwiftOverlays
+    - SwiftSoup
     - UIImageColors
     - Zip
 
@@ -195,9 +198,10 @@ SPEC CHECKSUMS:
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SwiftOverlays: dae1efb029c9401d357044dd70fd2cfce791fcb0
+  SwiftSoup: 277f7ef548826e0ca7603a06b30d4a5df3ee0587
   UIImageColors: 3ae0150e539342697808281a3975fe5dec2024ce
   Zip: 8877eede3dda76bcac281225c20e71c25270774c
 
-PODFILE CHECKSUM: fa674fa19611897d9868b3549f6645c3206214a0
+PODFILE CHECKSUM: 6fd59e469c0a6b164cb2d38d0d02ca5627826cc2
 
 COCOAPODS: 1.5.0

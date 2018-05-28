@@ -20,10 +20,20 @@
 		4917AB7E209303E000B40FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4917AB7D209303E000B40FE4 /* Assets.xcassets */; };
 		4917AB81209303E000B40FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4917AB7F209303E000B40FE4 /* LaunchScreen.storyboard */; };
 		49836E3A2098801800D01BB1 /* MoreLoginDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49836E392098801800D01BB1 /* MoreLoginDetailsViewController.swift */; };
+		4987912820B973E600E90036 /* ChaptersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912720B973E600E90036 /* ChaptersListViewController.swift */; };
+		4987912A20B97F2D00E90036 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */; };
+		4987912C20B9865600E90036 /* ChapterListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912B20B9865600E90036 /* ChapterListModal.swift */; };
+		4987912E20BA87DA00E90036 /* SubChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912D20BA87DA00E90036 /* SubChapterViewController.swift */; };
+		4987913020BA881000E90036 /* SubChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912F20BA881000E90036 /* SubChapterTableViewCell.swift */; };
+		4987913220BA8C1E00E90036 /* SubChapterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987913120BA8C1E00E90036 /* SubChapterModal.swift */; };
+		4987913420BAE09000E90036 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987913320BAE09000E90036 /* ReaderViewController.swift */; };
 		49903992209BA42F00B9149F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903991209BA42E00B9149F /* HomeViewController.swift */; };
 		49903996209BC96E00B9149F /* ActTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903995209BC96E00B9149F /* ActTableViewCell.swift */; };
 		49903998209BCA8200B9149F /* ActListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903997209BCA8200B9149F /* ActListModal.swift */; };
 		4990399A209CE70000B9149F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903999209CE70000B9149F /* File.swift */; };
+		49C87AA620BBA66B00866392 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AA520BBA66B00866392 /* SectionViewController.swift */; };
+		49C87AA820BBA7DB00866392 /* SectionsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AA720BBA7DB00866392 /* SectionsModal.swift */; };
+		49C87AB020BBA8E900866392 /* SectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */; };
 		49D044A120934AE500621DCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D044A020934AE500621DCB /* LoginViewController.swift */; };
 		49D044A82095D72300621DCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D044A72095D72300621DCB /* GoogleService-Info.plist */; };
 		49D044AA2095EDB200621DCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D044A92095EDB200621DCB /* RegisterViewController.swift */; };
@@ -47,10 +57,20 @@
 		4917AB80209303E000B40FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4917AB82209303E000B40FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49836E392098801800D01BB1 /* MoreLoginDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginDetailsViewController.swift; sourceTree = "<group>"; };
+		4987912720B973E600E90036 /* ChaptersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersListViewController.swift; sourceTree = "<group>"; };
+		4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
+		4987912B20B9865600E90036 /* ChapterListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListModal.swift; sourceTree = "<group>"; };
+		4987912D20BA87DA00E90036 /* SubChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubChapterViewController.swift; sourceTree = "<group>"; };
+		4987912F20BA881000E90036 /* SubChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubChapterTableViewCell.swift; sourceTree = "<group>"; };
+		4987913120BA8C1E00E90036 /* SubChapterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubChapterModal.swift; sourceTree = "<group>"; };
+		4987913320BAE09000E90036 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		49903991209BA42E00B9149F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		49903995209BC96E00B9149F /* ActTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActTableViewCell.swift; sourceTree = "<group>"; };
 		49903997209BCA8200B9149F /* ActListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActListModal.swift; sourceTree = "<group>"; };
 		49903999209CE70000B9149F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		49C87AA520BBA66B00866392 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		49C87AA720BBA7DB00866392 /* SectionsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsModal.swift; sourceTree = "<group>"; };
+		49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewCell.swift; sourceTree = "<group>"; };
 		49D044A020934AE500621DCB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		49D044A72095D72300621DCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49D044A92095EDB200621DCB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +125,16 @@
 				49D044A92095EDB200621DCB /* RegisterViewController.swift */,
 				4917AB78209303CC00B40FE4 /* ViewController.swift */,
 				4917AB7A209303CC00B40FE4 /* Main.storyboard */,
+				49C87AA520BBA66B00866392 /* SectionViewController.swift */,
+				49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */,
+				49C87AA720BBA7DB00866392 /* SectionsModal.swift */,
+				4987913320BAE09000E90036 /* ReaderViewController.swift */,
+				4987912D20BA87DA00E90036 /* SubChapterViewController.swift */,
+				4987912F20BA881000E90036 /* SubChapterTableViewCell.swift */,
+				4987913120BA8C1E00E90036 /* SubChapterModal.swift */,
+				4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */,
+				4987912B20B9865600E90036 /* ChapterListModal.swift */,
+				4987912720B973E600E90036 /* ChaptersListViewController.swift */,
 				49903995209BC96E00B9149F /* ActTableViewCell.swift */,
 				4902819920B6FF2F00D315DF /* SampleView.swift */,
 				4902819D20B708E100D315DF /* SampleView.xib */,
@@ -113,9 +143,9 @@
 				4902818F20B5849300D315DF /* ArticalListModal.swift */,
 				49903991209BA42E00B9149F /* HomeViewController.swift */,
 				49903999209CE70000B9149F /* File.swift */,
+				4917AB7F209303E000B40FE4 /* LaunchScreen.storyboard */,
 				49D044A72095D72300621DCB /* GoogleService-Info.plist */,
 				4917AB7D209303E000B40FE4 /* Assets.xcassets */,
-				4917AB7F209303E000B40FE4 /* LaunchScreen.storyboard */,
 				4917AB82209303E000B40FE4 /* Info.plist */,
 				49D044A020934AE500621DCB /* LoginViewController.swift */,
 				4902819520B6CA5000D315DF /* ArticalDetailsViewController.swift */,
@@ -267,6 +297,7 @@
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
 				"${BUILT_PRODUCTS_DIR}/UIImageColors/UIImageColors.framework",
 				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -294,6 +325,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIImageColors.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -315,20 +347,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4987913020BA881000E90036 /* SubChapterTableViewCell.swift in Sources */,
+				4987912820B973E600E90036 /* ChaptersListViewController.swift in Sources */,
 				4902819020B5849300D315DF /* ArticalListModal.swift in Sources */,
+				49C87AB020BBA8E900866392 /* SectionsTableViewCell.swift in Sources */,
 				4902819220B5A6A500D315DF /* ArticalListViewController.swift in Sources */,
 				49903996209BC96E00B9149F /* ActTableViewCell.swift in Sources */,
+				4987913220BA8C1E00E90036 /* SubChapterModal.swift in Sources */,
 				49D044A120934AE500621DCB /* LoginViewController.swift in Sources */,
 				49836E3A2098801800D01BB1 /* MoreLoginDetailsViewController.swift in Sources */,
 				4917AB79209303CC00B40FE4 /* ViewController.swift in Sources */,
+				4987912A20B97F2D00E90036 /* ChapterTableViewCell.swift in Sources */,
 				4902819420B5B12500D315DF /* ListOfArticalsModal.swift in Sources */,
+				49C87AA820BBA7DB00866392 /* SectionsModal.swift in Sources */,
 				4917AB77209303CC00B40FE4 /* AppDelegate.swift in Sources */,
 				4902819620B6CA5000D315DF /* ArticalDetailsViewController.swift in Sources */,
+				4987913420BAE09000E90036 /* ReaderViewController.swift in Sources */,
 				49D044AA2095EDB200621DCB /* RegisterViewController.swift in Sources */,
 				4902819A20B6FF2F00D315DF /* SampleView.swift in Sources */,
 				49903998209BCA8200B9149F /* ActListModal.swift in Sources */,
 				4902818C20B57C5000D315DF /* ArticalViewController.swift in Sources */,
+				4987912C20B9865600E90036 /* ChapterListModal.swift in Sources */,
+				49C87AA620BBA66B00866392 /* SectionViewController.swift in Sources */,
 				4990399A209CE70000B9149F /* File.swift in Sources */,
+				4987912E20BA87DA00E90036 /* SubChapterViewController.swift in Sources */,
 				49903992209BA42F00B9149F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

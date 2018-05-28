@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     var database:OpaquePointer?
     let dropper = Dropper(width: 125, height: 200)
     var p:Int!
+    var data:String!
   
     @IBOutlet weak var dropdownbutton: UIButton!
     @IBOutlet weak var table: UITableView!
@@ -203,6 +204,11 @@ class HomeViewController: UIViewController {
             print("Error while enumerating files \(file.path): \(error.localizedDescription)")
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ChaptersListViewController{
+            destination.chapterName=data
+        }
+    }
     
     
     
@@ -232,6 +238,26 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         tableView.deleteRows(at: [indexPath], with: .automatic)
         
     }
+    func checkIntoBareAct(name:String)->Bool{
+        let queryString = "SELECT * FROM BARE_ACT_LIST WHERE ACT_NAME='\(name)'"
+        
+        //statement pointer
+        var stmt:OpaquePointer?
+        
+        //preparing the query
+        if sqlite3_prepare(database, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(database)!)
+            print("error preparing insert: \(errmsg)")
+            
+        }
+        
+        //traversing through all the records
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            return true
+        }
+        
+        return false
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let act=acts[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "actsList") as! ActTableViewCell
@@ -239,6 +265,11 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         //print(cell.getData(ActList:act))
         let url=cell.getData(ActList: act)
         print(url[2]  as! String)
+        var check:Bool=checkIntoBareAct(name: url[0] as! String)
+        if check{
+            data=url[0] as! String
+            performSegue(withIdentifier: "ChapterList", sender: self)
+        }else{
         let file:URL=(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL?)!
         let destinationPath=file.appendingPathComponent("temp.zip")
         print(destinationPath)
@@ -333,10 +364,18 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
                 // Another error occurred. This is a good place to retry the download.
                 break
             }
+            }
         
     }
         func storeInDatabase(path:URL,name:String,version:String)->Bool{
             //print("intial : \(path.absoluteString) ")
+            if !checkIntoBareActs(name: name){
+                InsertIntoBareActs(Actname:name,Version:version)
+                print("values inserted")
+            }
+            else{
+                print("item found")
+            }
             do{
             let files = try FileManager.default.contentsOfDirectory(at: path, includingPropertiesForKeys: nil)
                 //if FileManager.default.fileExists(atPath: path.absoluteString){
@@ -353,7 +392,7 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
                             
                         
 //print(file.lastPathComponent)
-                            InsertIntoSections(Name:file.lastPathComponent,Content:content,parent:file.deletingLastPathComponent().lastPathComponent,subparent:file.deletingLastPathComponent().deletingLastPathComponent().lastPathComponent,actName:name)
+                            InsertIntoSections(Name:file.lastPathComponent,Content:content,parent:file.deletingLastPathComponent().lastPathComponent,parent_parent:file.deletingLastPathComponent().deletingLastPathComponent().lastPathComponent,actName:name)
                         }
                         catch{
                             
@@ -487,12 +526,14 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             }
             
         }
-        func InsertIntoSections(Name:String,Content:String,parent:String,subparent:String,actName:String){
+        func InsertIntoSections(Name:String,Content:String,parent:String,parent_parent:String,actName:String){
             var stmt:OpaquePointer?
             let query = "INSERT INTO BARE_ACT_SECTIONS (SECTION_NAME,SECTION_CONTENT,CHAPTER_NAME,SUBCHAPTER_NAME,ACT_NAME) VALUES(?,?,?,?,?)"
             if sqlite3_prepare(database, query, -1, &stmt, nil) != SQLITE_OK{
                 
             }
+            print("parent:  :  \(parent)")
+            print("subsparent:  :  \(parent_parent)")
             
            // print(Name)
             if sqlite3_bind_text(stmt, 1,(Name as NSString).utf8String, -1, nil) != SQLITE_OK {
@@ -501,12 +542,37 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             if sqlite3_bind_text(stmt, 2, (Content as NSString).utf8String, -1, nil) != SQLITE_OK{
                 
             }
-            if sqlite3_bind_text(stmt, 3,(subparent as NSString).utf8String, -1, nil) != SQLITE_OK {
+            if parent_parent.elementsEqual(actName){
+            if sqlite3_bind_text(stmt, 3, (parent as NSString).utf8String, -1, nil) != SQLITE_OK{
                 
             }
+            
+            
             if sqlite3_bind_text(stmt, 4, (parent as NSString).utf8String, -1, nil) != SQLITE_OK{
                 
             }
+            }
+            else if parent_parent.elementsEqual("Documents"){
+                if sqlite3_bind_text(stmt, 3, (parent as NSString).utf8String, -1, nil) != SQLITE_OK{
+                    
+                }
+                
+                
+                if sqlite3_bind_text(stmt, 4, (parent as NSString).utf8String, -1, nil) != SQLITE_OK{
+                    
+                }
+            }
+            else{
+                if sqlite3_bind_text(stmt, 3, (parent_parent as NSString).utf8String, -1, nil) != SQLITE_OK{
+                    
+                }
+                
+                
+                if sqlite3_bind_text(stmt, 4, (parent as NSString).utf8String, -1, nil) != SQLITE_OK{
+                    
+                }
+            }
+            
             if sqlite3_bind_text(stmt,5, (actName as NSString).utf8String, -1, nil) != SQLITE_OK{
                 
             }

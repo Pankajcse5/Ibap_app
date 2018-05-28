@@ -9,13 +9,21 @@
 import UIKit
 
 class ActTableViewCell: UITableViewCell {
-    @IBOutlet weak var actName: UITextView!
+    @IBOutlet weak var actName: UILabel!
     
-    @IBOutlet weak var price: UITextView!
+    @IBOutlet weak var price: UILabel!
     
+    @IBOutlet weak var statusicon: UIImageView!
     func setData(ActList:ActListModal){
         actName.text=ActList.ActName
-        price.text=ActList.price
+        if !ActList.free{
+            price.text="Rs. \(ActList.price)"
+            statusicon.image=UIImage(named: "padlock-unlock.png")
+        }
+        else{
+            statusicon.image=UIImage(named: "download.png")
+        price.text="Free"
+        }
     }
     func getData(ActList:ActListModal) -> [Any]{
         var data:[Any]=[]

@@ -9,6 +9,7 @@
 import UIKit
 import SDWebImage
 import CustomizableActionSheet
+import UIImageColors
 
 
 class ArticalDetailsViewController: UIViewController {
@@ -21,6 +22,30 @@ class ArticalDetailsViewController: UIViewController {
     @IBOutlet weak var navigationBar: UINavigationBar!
     var actionSheet: CustomizableActionSheet?
 
+    @IBAction func gesture(_ sender: Any) {
+        print("vds")
+        if (self.navigationController?.isNavigationBarHidden)!{
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+            self.navigationController?.setToolbarHidden(false, animated: true)
+            for constrain in self.view.constraints{
+                if constrain.identifier == "imageTop"{
+                    constrain.constant = 64
+                    upperImage.heightAnchor.constraint(equalToConstant: upperImage.frame.height+0)
+                }
+            }
+        }
+        else{
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+            self.navigationController?.setToolbarHidden(true, animated: true)
+            for constrain in self.view.constraints{
+                if constrain.identifier == "imageTop"{
+                    constrain.constant = 0
+                    upperImage.heightAnchor.constraint(equalToConstant: upperImage.frame.height+64)
+                }
+            }
+            
+        }
+    }
     @IBAction func showProfile(_ sender: Any) {
         print("profile")
         var items = [CustomizableActionSheetItem]()
@@ -32,6 +57,7 @@ class ArticalDetailsViewController: UIViewController {
             sampleViewItem.view = sampleView
             items.append(sampleViewItem)
         }
+        
         let clearItem = CustomizableActionSheetItem(type: .button)
         clearItem.label = "Cancel"
         clearItem.backgroundColor = UIColor(red: 1, green: 0.41, blue: 0.38, alpha: 1)
@@ -68,6 +94,27 @@ class ArticalDetailsViewController: UIViewController {
             lowerImage.clipsToBounds=true
             lowerImage.layer.borderWidth=1
             lowerImage.layer.borderColor=UIColor.white.cgColor
+            
+            self.navigationController?.hidesBarsOnSwipe=true
+            for constrain in self.view.constraints{
+                if constrain.identifier == "imageTop"{
+                    constrain.constant = 64
+                    upperImage.heightAnchor.constraint(equalToConstant: upperImage.frame.height+0)
+                }
+            }
+            let image=upperImage.image
+            let colors=image?.getColors()
+            //self.navigationController?.navigationBar.backgroundColor=colors?.primary
+            self.navigationController?.navigationBar.tintColor=colors?.secondary
+            self.navigationController?.navigationBar.barTintColor=colors?.background
+            
+            print(colors?.background)
+            print(colors?.primary)
+            //self.navigationController?.hidesBarsOnTap=true
+           
+            
+            
+            //addTwoFingerSwipeGesture()
         /*
             navigationBar.backgroundColor=UIColor.blue
             navigationBar.barTintColor=UIColor.white
@@ -79,11 +126,17 @@ class ArticalDetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+   
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
+    
     
 
     /*

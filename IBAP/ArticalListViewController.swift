@@ -17,6 +17,8 @@ class ArticalsListViewCell:UITableViewCell{
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var views: UILabel!
+
+    
     
     func SetData(list:ListOfArticalsModal) {
         listImage.sd_setImage(with: URL(string:list.Artical_pic), placeholderImage: UIImage(named: "ctc.png"))
@@ -47,6 +49,7 @@ class ArticalListViewController: UIViewController {
     var articals: [ListOfArticalsModal] = []
     var collRef:CollectionReference!
     var Selected:[Any]!
+    var imageView:UIImageView!
 
     @IBOutlet weak var titleBar: UINavigationItem!
     @IBOutlet weak var tablevw: UITableView!
@@ -56,6 +59,8 @@ class ArticalListViewController: UIViewController {
         tablevw.delegate=self
         tablevw.dataSource=self
         print("hello")
+        self.navigationController?.navigationBar.barTintColor=UIColor(red: 150/255, green: 31/255, blue: 53/255, alpha: 1.0 )
+        self.navigationController?.navigationBar.tintColor=UIColor.white
 
         if let ArticalName = ArticalName{
             print(ArticalName)
@@ -72,11 +77,17 @@ class ArticalListViewController: UIViewController {
             else{
                 for document in querySnapshot!.documents{
                     let docData=document.data()
+                    //var a:Bool=true
                     let data=ListOfArticalsModal(about: docData["Author_about"] as! String, image: docData["Author_image"] as! String, content: docData["Content"] as! String, title: docData["Title"] as! String, date: docData["Date"] as! String, uploadedby: docData["UploadedBy"] as! String, views: docData["Views"] as! Int, artical_pic: docData["Pic"] as! String)
                     self.articals.append(data)
+                   
+                    
                     
                 }
+                
                 self.tablevw.reloadData()
+                
+                
                 
                 
             }
@@ -87,6 +98,7 @@ class ArticalListViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
