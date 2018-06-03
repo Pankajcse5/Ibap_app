@@ -23,6 +23,15 @@ pod 'MIBlurPopup'
 pod 'UIImageColors', '~> 2.0'
 pod 'CustomizableActionSheet'
 pod 'SwiftSoup', '~> 1.7'
+pod 'FCAlertView'
+pod 'MaterialCard'
+pod 'FeedKit', '~> 6.0'
+pod 'JJFloatingActionButton'
+pod 'DLRadioButton', '~> 1.4'
+pod 'EggRating'
+
+
+
 
 
 

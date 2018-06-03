@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4902526620C2B81B00132793 /* SubmitActViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902526520C2B81B00132793 /* SubmitActViewController.swift */; };
 		4902818C20B57C5000D315DF /* ArticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902818B20B57C5000D315DF /* ArticalViewController.swift */; };
 		4902819020B5849300D315DF /* ArticalListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902818F20B5849300D315DF /* ArticalListModal.swift */; };
 		4902819220B5A6A500D315DF /* ArticalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4902819120B5A6A500D315DF /* ArticalListViewController.swift */; };
@@ -19,6 +20,13 @@
 		4917AB7C209303CC00B40FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4917AB7A209303CC00B40FE4 /* Main.storyboard */; };
 		4917AB7E209303E000B40FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4917AB7D209303E000B40FE4 /* Assets.xcassets */; };
 		4917AB81209303E000B40FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4917AB7F209303E000B40FE4 /* LaunchScreen.storyboard */; };
+		493037EE20C1359C00B6B3AF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493037ED20C1359C00B6B3AF /* ProfileViewController.swift */; };
+		493037F020C140B900B6B3AF /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493037EF20C140B900B6B3AF /* ResetPasswordViewController.swift */; };
+		4938FD7520C1D1E30076F246 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4938FD7420C1D1E30076F246 /* SettingsViewController.swift */; };
+		4945D3B320BEAB0B0031AA6F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945D3B220BEAB0B0031AA6F /* NewsViewController.swift */; };
+		4945D3B520BEB7420031AA6F /* NewsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945D3B420BEB7420031AA6F /* NewsModal.swift */; };
+		4945D3B720BEBEEE0031AA6F /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945D3B620BEBEEE0031AA6F /* NewsDetailsViewController.swift */; };
+		4945D3BA20BFD65E0031AA6F /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4945D3B920BFD65E0031AA6F /* PassKit.framework */; };
 		49836E3A2098801800D01BB1 /* MoreLoginDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49836E392098801800D01BB1 /* MoreLoginDetailsViewController.swift */; };
 		4987912820B973E600E90036 /* ChaptersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912720B973E600E90036 /* ChaptersListViewController.swift */; };
 		4987912A20B97F2D00E90036 /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */; };
@@ -31,9 +39,11 @@
 		49903996209BC96E00B9149F /* ActTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903995209BC96E00B9149F /* ActTableViewCell.swift */; };
 		49903998209BCA8200B9149F /* ActListModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903997209BCA8200B9149F /* ActListModal.swift */; };
 		4990399A209CE70000B9149F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49903999209CE70000B9149F /* File.swift */; };
+		49907FF520C405A000CA135F /* FAQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49907FF420C405A000CA135F /* FAQTableViewController.swift */; };
 		49C87AA620BBA66B00866392 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AA520BBA66B00866392 /* SectionViewController.swift */; };
 		49C87AA820BBA7DB00866392 /* SectionsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AA720BBA7DB00866392 /* SectionsModal.swift */; };
 		49C87AB020BBA8E900866392 /* SectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */; };
+		49C87AB220BD2AF900866392 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C87AB120BD2AF900866392 /* CartViewController.swift */; };
 		49D044A120934AE500621DCB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D044A020934AE500621DCB /* LoginViewController.swift */; };
 		49D044A82095D72300621DCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D044A72095D72300621DCB /* GoogleService-Info.plist */; };
 		49D044AA2095EDB200621DCB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D044A92095EDB200621DCB /* RegisterViewController.swift */; };
@@ -42,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		15A0883127B224002AE00F65 /* Pods-IBAP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBAP.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBAP/Pods-IBAP.release.xcconfig"; sourceTree = "<group>"; };
+		4902526520C2B81B00132793 /* SubmitActViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitActViewController.swift; sourceTree = "<group>"; };
 		4902818B20B57C5000D315DF /* ArticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalViewController.swift; sourceTree = "<group>"; };
 		4902818F20B5849300D315DF /* ArticalListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalListModal.swift; sourceTree = "<group>"; };
 		4902819120B5A6A500D315DF /* ArticalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticalListViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +67,14 @@
 		4917AB7D209303E000B40FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4917AB80209303E000B40FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4917AB82209303E000B40FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493037ED20C1359C00B6B3AF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		493037EF20C140B900B6B3AF /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		4938FD7420C1D1E30076F246 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4945D3B220BEAB0B0031AA6F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4945D3B420BEB7420031AA6F /* NewsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModal.swift; sourceTree = "<group>"; };
+		4945D3B620BEBEEE0031AA6F /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		4945D3B820BF04520031AA6F /* IBAP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IBAP.entitlements; sourceTree = "<group>"; };
+		4945D3B920BFD65E0031AA6F /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		49836E392098801800D01BB1 /* MoreLoginDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreLoginDetailsViewController.swift; sourceTree = "<group>"; };
 		4987912720B973E600E90036 /* ChaptersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersListViewController.swift; sourceTree = "<group>"; };
 		4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,9 +87,11 @@
 		49903995209BC96E00B9149F /* ActTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActTableViewCell.swift; sourceTree = "<group>"; };
 		49903997209BCA8200B9149F /* ActListModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActListModal.swift; sourceTree = "<group>"; };
 		49903999209CE70000B9149F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		49907FF420C405A000CA135F /* FAQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQTableViewController.swift; sourceTree = "<group>"; };
 		49C87AA520BBA66B00866392 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		49C87AA720BBA7DB00866392 /* SectionsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsModal.swift; sourceTree = "<group>"; };
 		49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewCell.swift; sourceTree = "<group>"; };
+		49C87AB120BD2AF900866392 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		49D044A020934AE500621DCB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		49D044A72095D72300621DCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49D044A92095EDB200621DCB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4945D3BA20BFD65E0031AA6F /* PassKit.framework in Frameworks */,
 				AB2B1998EE5B8FB0DCCA893D /* Pods_IBAP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,17 +143,26 @@
 		4917AB75209303CC00B40FE4 /* IBAP */ = {
 			isa = PBXGroup;
 			children = (
+				4945D3B820BF04520031AA6F /* IBAP.entitlements */,
 				4917AB76209303CC00B40FE4 /* AppDelegate.swift */,
+				4945D3B420BEB7420031AA6F /* NewsModal.swift */,
 				49D044A92095EDB200621DCB /* RegisterViewController.swift */,
 				4917AB78209303CC00B40FE4 /* ViewController.swift */,
 				4917AB7A209303CC00B40FE4 /* Main.storyboard */,
+				49907FF420C405A000CA135F /* FAQTableViewController.swift */,
+				4902526520C2B81B00132793 /* SubmitActViewController.swift */,
+				4938FD7420C1D1E30076F246 /* SettingsViewController.swift */,
+				493037EF20C140B900B6B3AF /* ResetPasswordViewController.swift */,
+				493037ED20C1359C00B6B3AF /* ProfileViewController.swift */,
+				4945D3B620BEBEEE0031AA6F /* NewsDetailsViewController.swift */,
+				49C87AB120BD2AF900866392 /* CartViewController.swift */,
 				49C87AA520BBA66B00866392 /* SectionViewController.swift */,
+				4987913120BA8C1E00E90036 /* SubChapterModal.swift */,
 				49C87AAF20BBA8E900866392 /* SectionsTableViewCell.swift */,
 				49C87AA720BBA7DB00866392 /* SectionsModal.swift */,
 				4987913320BAE09000E90036 /* ReaderViewController.swift */,
 				4987912D20BA87DA00E90036 /* SubChapterViewController.swift */,
 				4987912F20BA881000E90036 /* SubChapterTableViewCell.swift */,
-				4987913120BA8C1E00E90036 /* SubChapterModal.swift */,
 				4987912920B97F2D00E90036 /* ChapterTableViewCell.swift */,
 				4987912B20B9865600E90036 /* ChapterListModal.swift */,
 				4987912720B973E600E90036 /* ChaptersListViewController.swift */,
@@ -153,6 +184,7 @@
 				49836E392098801800D01BB1 /* MoreLoginDetailsViewController.swift */,
 				4902818B20B57C5000D315DF /* ArticalViewController.swift */,
 				4902819120B5A6A500D315DF /* ArticalListViewController.swift */,
+				4945D3B220BEAB0B0031AA6F /* NewsViewController.swift */,
 			);
 			path = IBAP;
 			sourceTree = "<group>";
@@ -160,6 +192,7 @@
 		CCEBF478831DC8D64C83EBD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4945D3B920BFD65E0031AA6F /* PassKit.framework */,
 				558FB682213869EB888313CC /* Pods_IBAP.framework */,
 			);
 			name = Frameworks;
@@ -201,6 +234,14 @@
 					4917AB72209303CC00B40FE4 = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.Wallet = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -285,16 +326,23 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/CustomizableActionSheet/CustomizableActionSheet.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Dropper/Dropper.framework",
+				"${BUILT_PRODUCTS_DIR}/EggRating/EggRating.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FCAlertView/FCAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/FeedKit/FeedKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/JJFloatingActionButton/JJFloatingActionButton.framework",
 				"${BUILT_PRODUCTS_DIR}/MIBlurPopup/MIBlurPopup.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialCard/MaterialCard.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RateView/RateView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftOverlays/SwiftOverlays.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
@@ -313,16 +361,23 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CustomizableActionSheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dropper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EggRating.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FeedKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJFloatingActionButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MIBlurPopup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialCard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RateView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOverlays.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
@@ -347,20 +402,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4945D3B520BEB7420031AA6F /* NewsModal.swift in Sources */,
 				4987913020BA881000E90036 /* SubChapterTableViewCell.swift in Sources */,
 				4987912820B973E600E90036 /* ChaptersListViewController.swift in Sources */,
 				4902819020B5849300D315DF /* ArticalListModal.swift in Sources */,
 				49C87AB020BBA8E900866392 /* SectionsTableViewCell.swift in Sources */,
 				4902819220B5A6A500D315DF /* ArticalListViewController.swift in Sources */,
+				493037F020C140B900B6B3AF /* ResetPasswordViewController.swift in Sources */,
+				49907FF520C405A000CA135F /* FAQTableViewController.swift in Sources */,
+				4938FD7520C1D1E30076F246 /* SettingsViewController.swift in Sources */,
 				49903996209BC96E00B9149F /* ActTableViewCell.swift in Sources */,
+				49C87AB220BD2AF900866392 /* CartViewController.swift in Sources */,
 				4987913220BA8C1E00E90036 /* SubChapterModal.swift in Sources */,
 				49D044A120934AE500621DCB /* LoginViewController.swift in Sources */,
 				49836E3A2098801800D01BB1 /* MoreLoginDetailsViewController.swift in Sources */,
 				4917AB79209303CC00B40FE4 /* ViewController.swift in Sources */,
+				493037EE20C1359C00B6B3AF /* ProfileViewController.swift in Sources */,
 				4987912A20B97F2D00E90036 /* ChapterTableViewCell.swift in Sources */,
 				4902819420B5B12500D315DF /* ListOfArticalsModal.swift in Sources */,
 				49C87AA820BBA7DB00866392 /* SectionsModal.swift in Sources */,
 				4917AB77209303CC00B40FE4 /* AppDelegate.swift in Sources */,
+				4945D3B320BEAB0B0031AA6F /* NewsViewController.swift in Sources */,
 				4902819620B6CA5000D315DF /* ArticalDetailsViewController.swift in Sources */,
 				4987913420BAE09000E90036 /* ReaderViewController.swift in Sources */,
 				49D044AA2095EDB200621DCB /* RegisterViewController.swift in Sources */,
@@ -372,6 +434,8 @@
 				4990399A209CE70000B9149F /* File.swift in Sources */,
 				4987912E20BA87DA00E90036 /* SubChapterViewController.swift in Sources */,
 				49903992209BA42F00B9149F /* HomeViewController.swift in Sources */,
+				4902526620C2B81B00132793 /* SubmitActViewController.swift in Sources */,
+				4945D3B720BEBEEE0031AA6F /* NewsDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,15 +581,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IBAP/IBAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95BFWD9H78;
+				DEVELOPMENT_TEAM = 7E32V2WZ29;
 				INFOPLIST_FILE = IBAP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.law.kanishk.IBAP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.law.kanishk.IBAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IBAP/IBAP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -540,15 +605,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IBAP/IBAP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 95BFWD9H78;
+				DEVELOPMENT_TEAM = 7E32V2WZ29;
 				INFOPLIST_FILE = IBAP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.law.kanishk.IBAP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.law.kanishk.IBAP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IBAP/IBAP-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

@@ -11,21 +11,64 @@ import Firebase
 import Zip
 import SQLite3
 import Dropper
+import FCAlertView
+import SwiftOverlays
+import JJFloatingActionButton
+import EggRating
 
 class HomeViewController: UIViewController {
     
     var collRef:CollectionReference!    
     var acts: [ActListModal] = []
     var database:OpaquePointer?
-    let dropper = Dropper(width: 125, height: 200)
+    let dropper = Dropper(width: 64, height: 200)
     var p:Int!
     var data:String!
+    var tag:Int=0
+    
+    var fcdata:[Any]=[]
   
     @IBOutlet weak var dropdownbutton: UIButton!
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var tableviewrules: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        EggRating.itunesId="kanishk.agrwl@gmail.com"
+        EggRating.minRatingToAppStore=3.5
+        EggRating.daysUntilPrompt=2
+        EggRating.debugMode=false
+        EggRating.minuteUntilPrompt=60
+        EggRating.appVersion="1.0"
+        
+        EggRating.promptRateUsIfNeeded(in: self)
+        let actionButton = JJFloatingActionButton()
+        
+        actionButton.addItem(title: "Request to submit", image: UIImage(named: "First")?.withRenderingMode(.alwaysTemplate)) { item in
+            // do something
+            /*let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ActSubmittion") as! SubmitActViewController
+            self.present(nextViewController, animated:true, completion:nil)*/
+            self.performSegue(withIdentifier: "SubmitAct", sender: self)
+        }
+        
+        actionButton.addItem(title: "Help", image: UIImage(named: "Second")?.withRenderingMode(.alwaysTemplate)) { item in
+            // do something
+        }
+        
+        actionButton.addItem(title: "Contact", image: nil) { item in
+            // do something
+        }
+        
+        view.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
+        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
+        actionButton.overlayView.backgroundColor=UIColor.brown
+        actionButton.buttonColor=UIColor.init(rgba: 0xA2b6b6)
+
+        
+        self.showWaitOverlay()
+        
         let db=Firestore.firestore()
         //let settings = db.settings
         //settings.areTimestampsInSnapshotsEnabled = true
@@ -34,6 +77,7 @@ class HomeViewController: UIViewController {
         dropper.delegate=self
         table.dataSource=self
         table.delegate=self
+        //alert.delegate=self
         p=0
         collRef=db.collection("BareActs")
         collRef.getDocuments(){(querySnapshot,err) in
@@ -50,6 +94,7 @@ class HomeViewController: UIViewController {
                     self.acts.append(data)
                     //print(docData["Title"] as Any)
                 }
+                self.removeAllOverlays()
                 self.table.reloadData()
             }
             
@@ -141,11 +186,13 @@ class HomeViewController: UIViewController {
     @IBAction func ShowMenu(_ sender: Any) {
         print("Showmenu")
         if dropper.status == .hidden{
-        dropper.items = ["bookmarks","more.png","notes"]
+        dropper.items = ["note.png","agenda.png","highlighter-3.png"]
+            dropper.cornerRadius=10
+            dropper.border=(width: 1.0,color: UIColor.white)
             dropper.theme = Dropper.Themes.white
             dropper.delegate = self
             dropper.cornerRadius = 3
-            dropper.showWithAnimation(0.15, options: Dropper.Alignment.right, button: dropdownbutton)
+            dropper.showWithAnimation(0.15, options: Dropper.Alignment.center, button: dropdownbutton)
         }else{
             dropper.hideWithAnimation(0.2)
         }
@@ -205,8 +252,16 @@ class HomeViewController: UIViewController {
         }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if tag==0 {
+        
         if let destination = segue.destination as? ChaptersListViewController{
             destination.chapterName=data
+        }
+        }
+        else if tag==1{
+            if let destination = segue.destination as? CartViewController{
+                destination.data=fcdata
+            }
         }
     }
     
@@ -219,7 +274,7 @@ extension HomeViewController:DropperDelegate{
         print(contents)
     }
 }
-extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
+extension HomeViewController: UITableViewDelegate,UITableViewDataSource,FCAlertViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print(acts.count)
         return acts.count
@@ -265,11 +320,68 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
         //print(cell.getData(ActList:act))
         let url=cell.getData(ActList: act)
         print(url[2]  as! String)
-        var check:Bool=checkIntoBareAct(name: url[0] as! String)
-        if check{
+        let check:Bool=checkIntoBareAct(name: url[0] as! String)
+        var code=url[4] as! String
+        let isfree=url[3] as! Bool
+        if isfree,check{
+            tag=0
             data=url[0] as! String
             performSegue(withIdentifier: "ChapterList", sender: self)
-        }else{
+        }
+        else if isfree,!check{
+            let alert=FCAlertView()
+            alert.delegate=self
+            print("fcalert")
+            fcdata=url
+            alert.blurBackground=true
+            alert.animateAlertInFromTop=true
+            alert.autoHideSeconds=5
+            alert.dismissOnOutsideTouch=true
+            alert.hideDoneButton=true
+            alert.showAlert(inView: self, withTitle: "Download item : \(url[0] as! String)", withSubtitle: "Downloding this item will make the item as offline available", withCustomImage:UIImage(named: "download.png"), withDoneButtonTitle: nil, andButtons: ["Cancel","Download"])
+           // downloadItem(url: url)
+        
+        }else if !isfree,check{
+            data=url[0] as! String
+            performSegue(withIdentifier: "ChapterList", sender: self)
+        }
+        else if !isfree,!check{
+            showPurshase(url:url)
+        }
+        
+       
+       
+        
+    }
+    func showPurshase(url:[Any]){
+        tag=1
+        let alert=FCAlertView()
+        alert.delegate=self
+        print("fcalert")
+        fcdata=url
+        alert.blurBackground=true
+        alert.animateAlertInFromTop=true
+        alert.autoHideSeconds=15
+        alert.dismissOnOutsideTouch=true
+        alert.hideDoneButton=true
+        alert.showAlert(inView: self, withTitle: "item : \(url[0] as! String)", withSubtitle:"Price : \(url[1] as! String)", withCustomImage:UIImage(named: "download.png"), withDoneButtonTitle: nil, andButtons: ["Cancel","Buy now"])
+    }
+    func fcAlertView(_ alertView: FCAlertView, clickedButtonIndex index: Int, buttonTitle title: String) {
+        
+        if title == "Cancel" {
+            print("cancel")
+            alertView.dismiss()
+            
+        }else if title == "Download"{
+            print("dnld")
+           
+            downloadItem(url: fcdata)
+        }
+        else if title == "Buy now"{
+            performSegue(withIdentifier: "CartView", sender: self)
+        }
+    }
+    func downloadItem(url:[Any]){
         let file:URL=(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first as URL?)!
         let destinationPath=file.appendingPathComponent("temp.zip")
         print(destinationPath)
@@ -292,49 +404,49 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             //print(snapshot.progress?.completedUnitCount as Any)
             print(snapshot.reference.name)
             do{
-            let documentsDirectory = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask)[0]
-            //let path=documentsDirectory.appendingPathComponent(snapshot.reference.name)
+                let documentsDirectory = FileManager.default.urls(for:.documentDirectory, in: .userDomainMask)[0]
+                //let path=documentsDirectory.appendingPathComponent(snapshot.reference.name)
                 try Zip.unzipFile(destinationPath, destination: documentsDirectory, overwrite: true, password: nil,progress: {(progress) -> () in
-            print(progress.rounded())
+                    print(progress.rounded())
                 })
                 print(url[5] as! String)
                 //readValues()
-
-                storeInDatabase(path: file.appendingPathComponent(snapshot.reference.name.replacingOccurrences(of: ".zip", with:  "")).deletingLastPathComponent(),name : url[0] as! String,version : url[5] as! String)
+                
+                self.storeInDatabase(path: file.appendingPathComponent(snapshot.reference.name.replacingOccurrences(of: ".zip", with:  "")).deletingLastPathComponent(),name : url[0] as! String,version : url[5] as! String)
             }
             catch{
                 print("something went wrong!")
             }
             /*
-
-            do {
-                let fileURLs = try FileManager.default.contentsOfDirectory(at: file, includingPropertiesForKeys: nil)
-            //    print(fileURLs[1])
-                // process files
-
-                    for item in fileURLs{
-                        let name=snapshot.reference.name
-                        if item.hasDirectoryPath, !item.lastPathComponent.elementsEqual(name.replacingOccurrences(of: ".zip", with: "")){
-                            //print(item.lastPathComponent)
-                            
-                            print(name.replacingOccurrences(of: ".zip", with: ""))
-                            let fileenum : FileManager.DirectoryEnumerator? = FileManager.default.enumerator(atPath:item.absoluteString)
-                            
-                            while let item = fileenum?.nextObject() as? String{
-                                print(item)
-                            }
-                        
-                            
-                            
-                        }
-                        else{
-                            //print(item.lastPathComponent)
-                        }
-                    }
-            } catch {
-                print("Error while enumerating files \(file.path): \(error.localizedDescription)")
-            }*/
-
+             
+             do {
+             let fileURLs = try FileManager.default.contentsOfDirectory(at: file, includingPropertiesForKeys: nil)
+             //    print(fileURLs[1])
+             // process files
+             
+             for item in fileURLs{
+             let name=snapshot.reference.name
+             if item.hasDirectoryPath, !item.lastPathComponent.elementsEqual(name.replacingOccurrences(of: ".zip", with: "")){
+             //print(item.lastPathComponent)
+             
+             print(name.replacingOccurrences(of: ".zip", with: ""))
+             let fileenum : FileManager.DirectoryEnumerator? = FileManager.default.enumerator(atPath:item.absoluteString)
+             
+             while let item = fileenum?.nextObject() as? String{
+             print(item)
+             }
+             
+             
+             
+             }
+             else{
+             //print(item.lastPathComponent)
+             }
+             }
+             } catch {
+             print("Error while enumerating files \(file.path): \(error.localizedDescription)")
+             }*/
+            
             
         }
         downloadTask.observe(.failure) { snapshot in
@@ -364,7 +476,7 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
                 // Another error occurred. This is a good place to retry the download.
                 break
             }
-            }
+        }
         
     }
         func storeInDatabase(path:URL,name:String,version:String)->Bool{
@@ -616,6 +728,44 @@ extension HomeViewController: UITableViewDelegate,UITableViewDataSource{
             
         }
     }
+extension HomeViewController:EggRatingDelegate{
+    func didRate(rating rate: Double) {
+        
+    }
+    
+    func didIgnoreToRate() {
+        
+    }
+    
+    func didRateOnAppStore() {
+        
+    }
+    
+    func didIgnoreToRateOnAppStore() {
+        
+    }
     
     
 }
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int, alpha: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        assert(alpha >= 0 && alpha <= 255, "Invalid alpha component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: CGFloat(alpha) / 255.0)
+    }
+    
+    convenience init(rgba: Int) {
+        self.init(
+            red: (rgba >> 16) & 0xFF,
+            green: (rgba >> 8) & 0xFF,
+            blue: rgba & 0xFF,
+            alpha: rgba & 0xFF
+        )
+    }
+}
+    
+    
+

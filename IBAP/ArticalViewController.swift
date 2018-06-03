@@ -10,6 +10,7 @@ import UIKit
 import SDWebImage
 import Firebase
 import FirebaseFirestore
+import JJFloatingActionButton
 
 class ArticalTableViewCell:UITableViewCell{
     
@@ -63,12 +64,31 @@ class ArticalViewController: UIViewController {
     var collRef:CollectionReference!
     
     var Selected:String!
+    
 
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let actionButton = JJFloatingActionButton()
         
+        actionButton.addItem(title: "Request article submit", image: UIImage(named: "First")?.withRenderingMode(.alwaysTemplate)) { item in
+            // do something
+        }
+        
+        actionButton.addItem(title: "Help", image: UIImage(named: "Second")?.withRenderingMode(.alwaysTemplate)) { item in
+            // do something
+        }
+        
+        actionButton.addItem(title: "Contact", image: nil) { item in
+            // do something
+        }
+        
+        view.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        actionButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
+        actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
+
         let db=Firestore.firestore()
         tableView.delegate=self
         tableView.dataSource=self

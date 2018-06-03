@@ -24,6 +24,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if Auth.auth().currentUser != nil{
+            performSegue(withIdentifier: "HomeView", sender: self)
+        }
         
         loginbtn.layer.cornerRadius=10;
         loginbtn.clipsToBounds=true;
@@ -39,6 +42,13 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+       
+            if Auth.auth().currentUser != nil{
+                performSegue(withIdentifier: "HomeView", sender: self)
+            }
+        
+    }
     
     @IBAction func loginWithEmail(_ sender: Any) {
         let email = username.text!
@@ -50,6 +60,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
                 
             }
             else{
+                self.performSegue(withIdentifier: "HomeView", sender:self)
                 print("success")
                 self.showAlert(title: "info", msg: "Success")
                 
